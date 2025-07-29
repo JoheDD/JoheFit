@@ -1,17 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JoheFit</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JoheFit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
-    <div class="container">
-        <div class="logo">★</div>
-        <h1>JoheFit</h1>
-        <p>Estética. Disciplina. Poder interno.</p>
-    </div>
+  <div class="container">
+    <h1>JoheFit: Rutina de Abs</h1>
+    <label for="dia">Selecciona el día:</label>
+    <select id="dia" onchange="mostrarRutina()">
+      <option value="1">Día 1</option>
+      <option value="2">Día 2</option>
+      <option value="3">Día 3</option>
+      <option value="4">Día 4</option>
+      <option value="5">Día 5</option>
+      <option value="6">Día 6</option>
+      <option value="7">Día 7</option>
+    </select>
+    <div id="rutina" class="rutina-box"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
